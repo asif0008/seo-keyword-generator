@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.heading-one {
+  color: #000;
+  font-family: "Poppins" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.heading-two {
+  color: #5064a4;
+  font-family: "Poppins" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.387px;
+  text-align: left !important;
+}
+.heading-three {
+  color: #000;
+  font-family: "Poppins" !important;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.p-text {
+  color: #2b3674;
+  font-family: "Poppins" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 127.778% */
+  letter-spacing: -0.387px;
+}
+.p-text-two {
+  color: #8f9bba;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tools-heading {
+  color: #2b3674;
+  font-family: "Poppins" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.form-control:focus {
+  outline: none !important;
+  border-color: transparent !important;
+  -webkit-appearance: none !important;
+}
+.form-control:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+}
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 20px) !important;
+  padding: 0.375rem 0.75rem;
+  font-size: 15px !important;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #f7f7f7 !important;
+  background-clip: padding-box;
+  border: unset !important;
+  border-radius: 12px !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control::placeholder {
+  color: #8f9bba !important;
+  font-family: "Poppins" !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+select.form-control option.placeholder {
+  color: #8f9bba !important;
+  font-family: "Poppins" !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.btn-primary {
+  width: 25%;
+  border-radius: 12px !important;
+  background: #605bff !important;
+  padding: 15px 18px !important;
+  height: 56px !important;
+  color: #fff !important;
+  font-family: "Poppins" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+ul.listKeywords li {
+  list-style: none;
+  /*display: inline;*/
+  margin-right: 19px;
+  margin-bottom: 20px;
+  padding: 16px 26px;
+  border-radius: 12px;
+  background: #e9eaeb;
+  color: #2b3674;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer !important;
+}
+ul.listKeywords {
+  display: flex;
+  margin-top: 31px;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+.btn-loader {
+  width: 30px;
+  height: 30px;
+  border: 5px dotted #fff;
+  border-radius: 50%;
+  display: inline-block;
+  /*position: relative;*/
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Add a class for the hover effect */
+ul.listKeywords li {
+  list-style: none;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  padding: 16px 26px;
+  border-radius: 12px;
+  background: #e9eaeb;
+  color: #2b3674;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative; /* To position the icon */
+  transition: background 0.3s ease;
+}
+
+/* Add styles for the icon */
+ul.listKeywords li::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Ccircle cx='14' cy='14' r='14' fill='%231A6AB4'/%3E%3Cpath d='M10 10.085V16.5C9.9999 17.1347 10.2412 17.7457 10.675 18.209C11.1088 18.6724 11.7026 18.9534 12.336 18.995L12.5 19H16.914C16.8106 19.2924 16.6191 19.5456 16.3659 19.7247C16.1127 19.9038 15.8102 20 15.5 20H12C11.2044 20 10.4413 19.6839 9.87868 19.1213C9.31607 18.5587 9 17.7956 9 17V11.5C8.99984 11.1897 9.09593 10.8869 9.27503 10.6335C9.45413 10.3801 9.70742 10.1884 10 10.085ZM17.5 8C17.8978 8 18.2794 8.15804 18.5607 8.43934C18.842 8.72064 19 9.10218 19 9.5V16.5C19 16.8978 18.842 17.2794 18.5607 17.5607C18.2794 17.842 17.8978 18 17.5 18H12.5C12.1022 18 11.7206 17.842 11.4393 17.5607C11.158 17.2794 11 16.8978 11 16.5V9.5C11 9.10218 11.158 8.72064 11.4393 8.43934C11.7206 8.15804 12.1022 8 12.5 8H17.5ZM17.5 9H12.5C12.3674 9 12.2402 9.05268 12.1464 9.14645C12.0527 9.24021 12 9.36739 12 9.5V16.5C12 16.6326 12.0527 16.7598 12.1464 16.8536C12.2402 16.9473 12.3674 17 12.5 17H17.5C17.6326 17 17.7598 16.9473 17.8536 16.8536C17.9473 16.7598 18 16.6326 18 16.5V9.5C18 9.36739 17.9473 9.24021 17.8536 9.14645C17.7598 9.05268 17.6326 9 17.5 9Z' fill='white'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Add a hover effect */
+ul.listKeywords li:hover {
+  background: rgba(30, 147, 255, 0.22);
+  color: #1a6ab4 !important;
+}
+
+/* Show the icon on hover */
+ul.listKeywords li:hover::before {
+  opacity: 1;
+  cursor: pointer;
+}
+ul.listKeywords {
+  display: flex;
+  margin-top: 31px;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+@media screen and (max-width: 991px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
